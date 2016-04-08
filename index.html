@@ -3,21 +3,65 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Transformify</title>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="public/css/materialize.min.css">
+	<link rel="stylesheet" href="public/css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 <body>
-	<input type="file" id="imageLoader" name="imageLoader"/><br/>
-	<canvas id="imageCanvas"></canvas><br/>
-	<button id="download">download</button>
-	<button id="reset">reset</button>
-	<button id="vintage">vintage</button>
-	<button id="lomo">lomo</button>
-	<button id="clarity">clarity</button>
-	<button id="sepia">sepia</button>
-	<button id="sunrise">sunrise</button>
-	<button id="grungy">grungy</button>
-	<button id="jarques">jarques</button>
-	<button id="nostalgia">nostalgia</button>
+	<nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Transformify</a>
+    </div>
+  </nav>
+	<div class="container">
+		<div class="file-field input-field">
+      <div class="btn">
+        <span>Image</span>
+        <input type="file" id="imageLoader" name="imageLoader">
+      </div>
+      <div class="file-path-wrapper">
+        <input class="file-path validate" type="text">
+      </div>
+    </div>
+
+		<canvas id="imageCanvas"></canvas> <br/>
+
+		<div class="row filter-buttons">
+				<button id="download">download</button>
+				<button id="reset">reset</button>
+				<button id="vintage">vintage</button>
+				<button id="lomo">lomo</button>
+				<button id="clarity">clarity</button>
+				<button id="sepia">sepia</button>
+				<button id="sunrise">sunrise</button>
+				<button id="grungy">grungy</button>
+				<button id="jarques">jarques</button>
+				<button id="nostalgia">nostalgia</button>
+		</div>
+	</div>
 </body>
+<footer class="page-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Transformify</h5>
+        <p class="grey-text text-lighten-4">
+					This application is made using JavaScript, CamanJS
+				</p>
+      </div>
+			<div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Project is on GitHub</h5>
+        <ul>
+          <li><a href="https://www.github.com/vikramcse/transformify">Vikram Jadhav</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+	<script src="public/js/jquery.min.js"></script>
 	<script src="public/js/caman.full.min.js"></script>
+	<script src="public/js/materialize.min.js"></script>
 	<script src="public/js/app.js"></script>
 </html>

@@ -7,8 +7,8 @@
   var canvas = document.getElementById('imageCanvas');
   var ctx = canvas.getContext('2d');
 
-  canvas.width = window.innerWidth * 0.65;
-  canvas.height = window.innerHeight * 0.65;
+  canvas.width = window.innerWidth * 0.80;
+  canvas.height = window.innerHeight * 0.70;
 
   //var filters = ["vintage", "lomo", "clarity", "sincity", "sunrise", "orangepeel", "grungy", "jarques", "nostalgia"];
 
